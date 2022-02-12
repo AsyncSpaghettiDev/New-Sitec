@@ -1,0 +1,135 @@
+body {
+    background-image: url(https://sitec.tectijuana.edu.mx/wp-content/uploads/2015/01/fondo.jpg);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 10px;
+    font: 14px "Times New Roman", Times, serif;
+    color: #515151;
+    background: #f0f0f0;
+}
+
+/*
+    ==============
+    General Styles
+    ==============
+*/
+
+.header, .nav {
+    margin: auto;
+    max-width: 1050px;
+}
+
+.nav, .main{
+    border-radius: 0.25rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 110px;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav {
+    background: url(./img/navbar-gris.png) no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    overflow: hidden;
+}
+
+/*
+    =============
+    Header Styles
+    =============
+*/
+
+.header__logo {
+    height: 100%;
+}
+
+#logoITT {
+    height: 80px;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+}
+
+#logoTNM {
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+
+#logoTNMH {
+    grid-row: 1;
+    grid-column: 1;
+    height: 85%;
+    justify-self: start;
+}
+
+/*
+    ==========
+    Nav Styles
+    ==========
+*/
+
+.nav__a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #5f5e5c;
+    margin-top: 5px;
+    padding: 0 1em;
+    height: 37px;
+}
+
+.nav__a:hover{
+    background: #fff;
+}
+/*
+    =============
+    Footer Styles
+    =============
+*/
+
+.footer{
+    text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        margin: 10px 10px;
+    }
+
+    .header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 125px;
+    }
+
+    .main{
+        max-width: 1050px;
+        margin: auto;
+    }
+
+    #logoITT {
+        grid-column: 3;
+        justify-self: center;
+    }
+
+    #logoTNM {
+        grid-column: 1;
+    }
+
+    #logoTNMH {
+        grid-column: 2;
+        height: 85%;
+        justify-self: center;
+    }
+}

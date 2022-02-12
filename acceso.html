@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnológico de Tijuana – Acceso</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="acceso.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" id="logoTNM" src="./img/LogoTNM.png"
+            alt="Logo Tecnológico Nacional de México con Transparencia">
+        <img class="header__logo" id="logoTNMH" src="./img/LogoTecNM_Horizontal.svg"
+            alt="Logo Tecnológico Nacional de México">
+        <img class="header__logo" id="logoITT" src="./img/logo_ITT1.png"
+            alt="Logo Tecnológico Nacional de México Cámpus Instituto Tecnológico Tijuana">
+    </header>
+    <nav class="nav">
+        <a class="nav__a" href="/">Inicio</a>
+        <a class="nav__a" href="/acceso.html">Acceso</a>
+    </nav>
+    <main class="main">
+        <article id='welcome'>
+            <h1 class="title">Bienvenidos a SITEC</h1>
+            <p class="p">Para acceder, usa el Número de Control con la clave correspondiente. Una vez que hayas
+                entrado, presiona en el menú superior "Reinscripción" para que inicies el procedimiento. Recuerda que
+                podrás
+                ingresar para reinscribirte a partir de la hora y fecha asignada, hasta antes del día de cierre de
+                reinscripciones.</p>
+        </article>
+        <article id='important'>
+            <h3 class="subtitle">¡AVISO IMPORTANTE!</h3>
+            <p class="p">Para conocer el día y la hora en que deberás ingresar, por favor da clic en el <a
+                    href="https://docs.google.com/spreadsheets/d/1tROsL2KaTrwgt3QjzKdjLuPoPoo1b091/edit?pli=1#gid=901025376"
+                    target="_blank">ORDEN DE ACCESO PARA ALUMNOS.</a></p>
+        </article>
+        <form action="" class="form" id='form'>
+            <div class="form__input form__keys">
+                <label for="noControl">Por favor escribe el Número de Control.</label>
+                <input id="noControl" placeholder="Número de Control" type="text">
+            </div>
+
+            <div class="form__input form__keys">
+                <label for="claveUser">Por favor escribe la clave.</label>
+                <input id="claveUser" placeholder="Clave" type="text">
+            </div>
+
+            <div class="form__input">
+                <a href="#">Recuperar Clave</a>
+            </div>
+
+            <div class="form__input submit-container">
+                <div class="g-recaptcha" data-sitekey="6LcHacMZAAAAAG5ucqmbMbftteQlLGFmaJnut_KD">
+                    <div style="width: 304px; height: 78px;">
+                        <div><iframe title="reCAPTCHA"
+                                src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LcHacMZAAAAAG5ucqmbMbftteQlLGFmaJnut_KD&amp;co=aHR0cHM6Ly9zaXRlYy50aWp1YW5hLnRlY25tLm14OjQ0Mw..&amp;hl=es&amp;v=BycHQdSIhzR_1EcOLw2mOzYQ&amp;size=normal&amp;cb=n0nskuxz5ed5"
+                                width="304" height="78" role="presentation" name="a-rdyc9u90n19y" frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                            class="g-recaptcha-response"
+                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div><iframe style="display: none;"></iframe>
+                </div>
+            </div>
+
+            <input class="submitBtn" type="submit" value="Entrar">
+            <a href="/panel.html">Entrar</a>
+        </form>
+        <article id='support'>
+            <h3 class="subtitle important">
+                <a href="https://www.facebook.com/Soporte-Técnico-SITEC-Tijuana-165425640900735/">CLIC PARA SOPORTE
+                    SITEC</a>
+            </h3>
+            <p class="p">En caso de tener algún problema durante el proceso, puedes documentarlo presionando PRINTSCR
+                en tu teclado (Windows) y pegarlo o insertar la imagen generada con CMD+SHIFT+3 (OSX) en un documento de
+                texto con tus comentarios y número de control. Para resolver cualquier inquietud si eres maestro pide
+                ayuda
+                al Jefe de Docencia y si eres alumno pide ayuda con el <a
+                    href="https://profesionales2.wixsite.com/deptijuana/coordinaciones">coordinador</a> de tu carrera.
+            </p>
+            <p class="p">Gracias.</p>
+        </article>
+
+    </main>
+    <footer class="footer">
+        <p>Instituto Tecnológico de Tijuana<br>
+            Calzada Del Tecnológico S/N, Fraccionamiento Tomas Aquino. Tijuana, Baja California. C.P. 22414
+            Teléfono: +52 (664) 607 8400<br>
+            Tecnológico Nacional de México – Algunos derechos reservados © 2014-2018<br>
+            <a href="/politica-de-privacidad/">Política de Privacidad</a>
+        </p>
+        <p>SITEC v6.0</p>
+    </footer>
+</body>
+
+</html>
