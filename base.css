@@ -41,7 +41,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 1em;
-    overflow: hidden;
 }
 
 /*

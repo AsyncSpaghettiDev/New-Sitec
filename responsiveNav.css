@@ -1,0 +1,76 @@
+.nav {
+    background: url(./img/navbar-gris.png) no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    background: #ffefef;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 250ms linear 50ms, transform 300ms ease-out;
+}
+
+#menuTrigger:checked ~ .navList {
+    opacity: 1;
+    transform: scaleY(1);
+    transition: opacity 250ms, transform 300ms ease-out;
+}
+
+.nav__a {
+    margin: 0;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: end;
+}
+
+.menuTriggerBtn {
+    display: block;
+    margin-right: 10px;
+}
+
+.menuTriggerBtn > img{
+    width: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .menuTriggerBtn {
+        display: none;
+    }
+
+    .nav {
+        justify-content: end;
+    }
+
+    .navList {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin: 5px 0;
+        position: relative;
+        top: 0;
+        transform: scaleY(1);
+        overflow: hidden;
+        background: transparent;
+    }
+
+    .nav__a {
+        width: max-content;
+        background: transparent;
+    }
+}
