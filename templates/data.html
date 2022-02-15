@@ -8,6 +8,8 @@
     <title>Instituto Tecnológico de Tijuana – Acceso</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="responsiveNav.css">
+    <link rel="stylesheet" href="update.css">
+    <script src="updater.js" defer></script>
 </head>
 
 <body>
@@ -24,8 +26,8 @@
         <input hidden type="checkbox" name="" id="menuTrigger">
         <ul class="navList">
             <li class="nav__item"><a class="nav__a" href="panel.html">Mi Panel</a></li>
-            <li class="nav__item"><a class="nav__a" href="clave.html">Cambiar Clave</a></li>
-            <li class="nav__item"><a class="nav__a" href="email.html">Cambiar Email</a></li>
+            <li class="nav__item"><a class="nav__a" id="changePassword" href="#">Cambiar Clave</a></li>
+            <li class="nav__item"><a class="nav__a" id="changeEmail" href="#">Cambiar Email</a></li>
             <li class="nav__item"><a class="nav__a" href="reinscripcion.html">Reinscripción</a></li>
             <li class="nav__item"><a class="nav__a" href="avance-ciclo.html">Avance Ciclo</a></li>
             <li class="nav__item"><a class="nav__a" href="kardex.html">Kardex</a></li>
@@ -40,6 +42,32 @@
 
          -->
     </main>
+
+    <div class="updater__container">
+        <div class="updater__wrapper">
+            <h2 class="updater-title">Template Title</h2>
+            <h3 class="updater-description">Template Description</h3>
+            <form class="updater-form" action="">
+                <div class="currentPassword">
+                    <label class="input-label" for="currentPasswordInput"></label>
+                    <input class="updater-input" id="currentPasswordInput" placeholder="Clave Actual" type="text">
+                </div>
+                <div class="newField">
+                    <label class="input-label" for="newFieldInput"></label>
+                    <input class="updater-input" id="newFieldInput" type="text">
+                </div>
+                <div class="confirmField">
+                    <label class="input-label" for="confirmFieldInput"></label>
+                    <input class="updater-input" id="confirmFieldInput" type="text">
+                </div>
+                <iframe title="reCAPTCHA" style="display: block;margin: 0.75em auto 0; width: min(310px, 90%);"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcHacMZAAAAAG5ucqmbMbftteQlLGFmaJnut_KD&amp;co=aHR0cHM6Ly9zaXRlYy50aWp1YW5hLnRlY25tLm14OjQ0Mw..&amp;hl=es&amp;v=BycHQdSIhzR_1EcOLw2mOzYQ&amp;size=normal&amp;cb=7p4tr7mxyeqq"
+                    height="78" role="presentation" name="a-wmpp8fge8a6r" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                <input class="updater-submit" type="submit" value="Actualizar">
+            </form>
+        </div>
+    </div>
     <footer class="footer">
         <p>Instituto Tecnológico de Tijuana<br>
             Calzada Del Tecnológico S/N, Fraccionamiento Tomas Aquino. Tijuana, Baja California. C.P. 22414

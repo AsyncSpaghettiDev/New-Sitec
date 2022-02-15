@@ -1,0 +1,134 @@
+/*
+    ===========
+    Main Styles
+    ===========
+*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f1f1;
+    gap: 2em;
+    padding-bottom: 1.5em;
+}
+
+/* Warning text style*/
+
+.warning {
+    box-sizing: border-box;
+    background-color: yellow;
+    width: 100%;
+    padding: 1em 3em;
+    text-align: center;
+}
+
+.warning-title,
+.warning-subtitle {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.warning-subtitle {
+    margin-top: 0.25em;
+    font-size: 1.15em;
+}
+
+/* Cards styles*/
+
+.student-info {
+    text-align: center;
+}
+
+.student-info h1{
+    font-size: 2.25em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.student-info h2{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.student-picture img {
+    border-radius: 50%;
+}
+
+.info-card {
+    background: #f7f7f7;
+    padding: 1.5em;
+    border-radius: 0.25em;
+    box-shadow: 0 0 8px #b6b6b6;
+    width: 85%;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-top: -2em;
+    margin-bottom: 0.75em;
+    margin-left: -0.5em;
+    background: #f8f8f8;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    box-shadow: 0 0 15px #b6b6b6;
+    box-sizing: border-box;
+    width: max-content;
+}
+
+.card-info{
+    margin-top: 0.4em;
+}
+
+@media screen and (min-width: 850px) {
+    .main {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 122px 85px auto auto;
+        grid-template-areas: "warning warning warning"
+            "info info info"
+            "picture escolar personal"
+            ". ticket ."
+        ;
+        gap: 1.5em;
+        row-gap: 2em;
+        padding: 1.25em;
+    }
+
+    .warning {
+        padding: 2em;
+        grid-area: warning;
+    }
+
+    .info-card {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .student-info {
+        grid-area: info;
+        text-align: left;
+    }
+
+    .student-picture {
+        justify-self: center;
+        grid-area: picture;
+    }
+
+    .student-info-escolar {
+        align-self: start;
+        grid-area: escolar;
+    }
+
+    .student-info-personal {
+        align-self: start;
+        grid-area: personal;
+    }
+
+    .student-tickets {
+        grid-area: ticket;
+    }
+}

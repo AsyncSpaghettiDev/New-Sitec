@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Tecnológico de Tijuana – Acceso</title>
+    <title>Instituto Tecnológico de Tijuana – Mi Panel</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="responsiveNav.css">
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="update.css">
+    <script src="updater.js" defer></script>
 </head>
 
 <body>
@@ -24,8 +27,8 @@
         <input hidden type="checkbox" name="" id="menuTrigger">
         <ul class="navList">
             <li class="nav__item"><a class="nav__a" href="panel.html">Mi Panel</a></li>
-            <li class="nav__item"><a class="nav__a" href="clave.html">Cambiar Clave</a></li>
-            <li class="nav__item"><a class="nav__a" href="email.html">Cambiar Email</a></li>
+            <li class="nav__item"><a class="nav__a" id="changePassword" href="#">Cambiar Clave</a></li>
+            <li class="nav__item"><a class="nav__a" id="changeEmail" href="#">Cambiar Email</a></li>
             <li class="nav__item"><a class="nav__a" href="reinscripcion.html">Reinscripción</a></li>
             <li class="nav__item"><a class="nav__a" href="avance-ciclo.html">Avance Ciclo</a></li>
             <li class="nav__item"><a class="nav__a" href="kardex.html">Kardex</a></li>
@@ -34,9 +37,117 @@
         </ul>
     </nav>
     <main class="main">
+        <article class="warning">
+            <h4 class="warning-title">Se informa a la comunidad estudiantil que cursen el 4º o 5º semestre.</h4>
+            <h4 class="warning-title">Es obligatorio llegar al 6º semestre con las Actividades Complementarias liberadas
+                en Control
+                Escolar.</h4>
+            <h5 class="warning-subtitle">Division de Estudios Profesionales</h5>
+        </article>
 
+        <article class="student-info">
+            <h1>Información del Alumno</h1>
+            <h2 class="student-name">Lorem ipsum dolor sit <span>(1621xxxx)</span></h2>
+        </article>
+
+        <div class="student-picture">
+            <img src="./img/template.jpg" alt="" width="220">
+        </div>
+
+        <article class="student-info-escolar info-card">
+            <h3 class="card-title">Información Escolar</h3>
+            <div class="card-info">
+                <strong>Carrera:</strong> <span>(00) Nam libero tempore</span>
+            </div>
+            <div class="card-info">
+                <strong>Plan de Estudios:</strong> <span>(0) Et harum quidem rerum facilis est</span>
+            </div>
+            <div class="card-info">
+                <strong>Módulo de Especialidad:</strong> <span>(alias consequatur aut perferendis) </span>
+            </div>
+            <div class="card-info">
+                <strong>Situación de Vigencia:</strong> <span>VIGENTE</span>
+            </div>
+            <div class="card-info">
+                <strong>Promedio:</strong> <span>
+                    xx</span>
+            </div>
+            <div class="card-info">
+                <strong>Créditos Acumulados:</strong> <span>xxx</span>
+            </div>
+            <div class="card-info">
+                <strong>Periodo de Ingreso:</strong> <span>(xxxx) Itaque earum rerum </span>
+            </div>
+            <div class="card-info">
+                <strong>Número de Periodos Convalidados:</strong> <span>0</span>
+            </div>
+            <div class="card-info">
+                <strong>Periodo Actual o Último:</strong> <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="card-info">
+                <strong>Tutor:</strong> <span>ut aut reiciendis voluptatibus maiores</span>
+            </div>
+        </article>
+
+        <article class="student-info-personal info-card">
+            <h3 class="card-title">Información Personal</h3>
+            <div class="card-info">
+                <strong>CURP:</strong> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+            <div class="card-info">
+                <strong>Fecha de Nacimiento:</strong> <span>Excepteur sint occaecat</span>
+            </div>
+            <div class="card-info">
+                <strong>Dirección:</strong> <span>inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    explicabo.</span>
+            </div>
+            <div class="card-info">
+                <strong>Teléfono Domicilio:</strong> <span>ullam corporis suscipit</span>
+            </div>
+            <div class="card-info">
+                <strong>Celular:</strong> <span>Ut enim ad minima veniam</span>
+            </div>
+            <div class="card-info">
+                <strong>E-Mail:</strong> <span>ea commodi consequatur?</span>
+            </div>
+            <div class="card-info school">
+                <strong>Escuela de Procedencia:</strong> <span>Quis autem vel eum iure reprehenderit qui in ea
+                    voluptate</span>
+            </div>
+        </article>
+
+        <article class="student-tickets info-card">
+            <h3 class="card-title">Tickets Generados</h3><span>Sin tickets abiertos.</span>
+        </article>
 
     </main>
+
+    <div class="updater__container">
+        <div class="updater__wrapper">
+            <h2 class="updater-title">Template Title</h2>
+            <h3 class="updater-description">Template Description</h3>
+            <form class="updater-form" action="">
+                <div class="currentPassword">
+                    <label class="input-label" for="currentPasswordInput"></label>
+                    <input class="updater-input" id="currentPasswordInput" placeholder="Clave Actual" type="text">
+                </div>
+                <div class="newField">
+                    <label class="input-label" for="newFieldInput"></label>
+                    <input class="updater-input" id="newFieldInput" type="text">
+                </div>
+                <div class="confirmField">
+                    <label class="input-label" for="confirmFieldInput"></label>
+                    <input class="updater-input" id="confirmFieldInput" type="text">
+                </div>
+                <iframe title="reCAPTCHA" style="display: block;margin: 0.75em auto 0; width: min(310px, 90%);"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcHacMZAAAAAG5ucqmbMbftteQlLGFmaJnut_KD&amp;co=aHR0cHM6Ly9zaXRlYy50aWp1YW5hLnRlY25tLm14OjQ0Mw..&amp;hl=es&amp;v=BycHQdSIhzR_1EcOLw2mOzYQ&amp;size=normal&amp;cb=7p4tr7mxyeqq"
+                    height="78" role="presentation" name="a-wmpp8fge8a6r" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                <input class="updater-submit" type="submit" value="Actualizar">
+            </form>
+        </div>
+    </div>
+
     <footer class="footer">
         <p>Instituto Tecnológico de Tijuana<br>
             Calzada Del Tecnológico S/N, Fraccionamiento Tomas Aquino. Tijuana, Baja California. C.P. 22414
