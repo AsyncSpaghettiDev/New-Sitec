@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
     background-image: url(https://sitec.tectijuana.edu.mx/wp-content/uploads/2015/01/fondo.jpg);
     background-position: center top;
@@ -5,8 +7,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     margin: 10px;
-    font: 14px "Times New Roman", Times, serif;
-    color: #515151;
+    font: 14px 'Montserrat', sans-serif;
+    color: #2e2929;
     background-color: #FAFAFA;
 }
 
@@ -21,7 +23,7 @@ body {
     max-width: 1050px;
 }
 
-.nav, .main{
+.nav, .main {
     border-radius: 0.25rem;
 }
 
@@ -31,6 +33,7 @@ body {
     grid-template-rows: 110px;
     justify-items: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 .nav {
@@ -89,17 +92,19 @@ body {
     height: 37px;
 }
 
-.nav__a:hover{
+.nav__a:hover {
     background: #fff;
 }
+
 /*
     =============
     Footer Styles
     =============
 */
 
-.footer{
+.footer {
     text-align: center;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 750px) {
@@ -112,7 +117,7 @@ body {
         grid-template-rows: 125px;
     }
 
-    .main{
+    .main {
         max-width: 1050px;
         margin: auto;
     }
@@ -130,5 +135,9 @@ body {
         grid-column: 2;
         height: 85%;
         justify-self: center;
+    }
+
+    .footer {
+        font-size: 14px;
     }
 }

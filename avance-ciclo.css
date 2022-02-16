@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/*
+    ===========
+    Main Styles
+    ===========
+*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f1f1;
+    gap: 2em;
+    padding: 1.5em 1.15em;
+    box-shadow: 0 0 7px #aaa;
+    box-sizing: border-box;
+}
+
+/* Student Info Card Style*/
+
+.student-info {
+    text-align: center;
+}
+
+.student-info-title{
+    font-size: 2.25em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.student-info-name{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.student-info-description{
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+/* Course Schedule Style */
+.student-courses{
+    max-width: 100%;
+}
+
+.course{
+    border-top: 4px solid #900;
+    border-radius: 0.125em;
+    padding: 0.5em;
+}
+
+.course:not(:first-child){
+    margin-top: 1.75em;
+}
+
+.course-info{
+    margin: 0.25em 0 0.25em;
+}
+
+.course-name{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.course-schedule{
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5em;
+    padding-bottom: 0.75em;
+}
+
+.course-day{
+    padding: 0 1em;
+    flex: 1 0 0;
+    flex-basis: content;
+    text-align: center;
+}
+
+.course-grades{
+    display: flex;
+    gap: 0.75em;
+    font-size: 13px;
+    overflow-x: scroll;
+    padding: 0.5em 0.5em 1.5em;
+}
+
+.grade-col{
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grade-col > span > input{
+    border: none;
+}
+
+.col-title{
+    height: 4ch;
+    width: max-content;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 750px) {
+    .course-schedule{
+        gap: 1.5em;
+    }
+}

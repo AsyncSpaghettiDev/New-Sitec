@@ -5,15 +5,15 @@ const container = document.querySelector('.updater__container');
 const passwordInfo = {
     title: 'Cambiar Clave',
     description: 'Aquí cambia tu contraseña por una que te sea más fácil recordar.',
-    placeholder1: 'Clave nueva',
-    placeholder2: 'Confirmar clave',
+    placeholder1: 'Clave Nueva',
+    placeholder2: 'Confirmar Clave',
     label: 'Por favor escribe la clave nueva de 6 a 10 caracteres.'
 }
 
 const emailInfo = {
     title: 'Actualizar correo',
     description: 'Debes actualizar tu correo para que puedas realizar el proceso de reinscripción.',
-    placeholder1: 'Correo nuevo',
+    placeholder1: 'Correo Nuevo',
     placeholder2: 'Confirmar correo'
 }
 
@@ -34,9 +34,9 @@ container.addEventListener('click', e => {
 })
 
 const changeTemplate = (info) => {
-    container.querySelector('.updater-title').textContent = info.title;
-    container.querySelector('.updater-description').textContent = info.description;
-    container.querySelector('#newFieldInput').placeholder = info.placeholder1;
-    container.querySelector('#confirmFieldInput').placeholder = info.placeholder2;
-    container.querySelectorAll('.input-label').textContent = info.label ? info.label : null;
+    container.querySelector('.updater-title').      textContent = info.title       ;
+    container.querySelector('.updater-description').textContent = info.description ;
+    container.querySelector('#newFieldInput').      placeholder = info.placeholder1;
+    container.querySelector('#confirmFieldInput').  placeholder = info.placeholder2;
+    container.querySelectorAll('.input-label').     textContent = info.label ? info.label : null;
 }
