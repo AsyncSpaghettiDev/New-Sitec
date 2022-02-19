@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.main{
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    gap: 2em;
+    padding: 1.5em 1.15em;
+    box-shadow: 0 5px 7px #aaa;
+    box-sizing: border-box;
+}
+
+
+.title, .subtitle{
+    margin: 0 0 0.2rem;
+}
+
+.title {
+    font-size: 2.25em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.record-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+
+.area-title{
+    font-weight: 500;
+    font-size: 1.25rem;
+    flex-basis: 100%;
+    margin-bottom: 0.5em;
+}
+
+.record{
+    flex: 1 1 300px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "label hour"
+    ". description"
+    ". sessionID";
+    gap: 0.25em 0.5em;
+}
+
+.record:before{
+    grid-area: label;
+    content: 'Fecha: ';
+}
+
+.record-hour{
+    grid-area: hour;
+}
+
+.record-description{
+    grid-area: description;
+}
+
+.record-session{
+    grid-area: sessionID;
+}

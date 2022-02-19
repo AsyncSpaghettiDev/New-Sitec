@@ -6,22 +6,17 @@
     place-items: center;
     background: rgba(0, 0, 0, 0.75);
     opacity: 0;
-    transition: opacity 500ms ease-in-out, visibility 500ms;
+    transition: opacity 500ms 350ms ease-out, visibility 800ms;
 }
 
 .updater--visible{
     visibility: visible;
     opacity: 1;
-    transition: opacity 500ms 100ms ease-out, visibility 600ms;
-}
-
-.updater--visible > .updater__wrapper{
-    transform: translateY(0);
-    transition: transform 300ms 150ms ease-out;
+    transition: opacity 500ms ease-out, visibility 800ms;
 }
 
 .updater__wrapper{
-    transform: translateY(-100%);
+    transform: translateY(-175%);
     background: rgb(219, 235, 251);
     color: rgb(1, 110, 255);
     padding: 1.5em;
@@ -32,7 +27,12 @@
     text-align: center;
     border-radius: 0.25em;
     box-shadow: 0 0 0.75em #000;
-    transition: transform 200ms ease-out;
+    transition: transform 300ms ease-out;
+}
+
+.updater--visible > .updater__wrapper{
+    transform: translateY(0);
+    transition: transform 300ms 450ms ease-out;
 }
 
 .updater-title,

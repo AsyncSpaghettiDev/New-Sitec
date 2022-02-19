@@ -28,7 +28,6 @@ changeEmail.addEventListener('click', e => {
 });
 
 container.addEventListener('click', e => {
-    console.log(e);
     if (e.target.classList.contains('updater__container'))
         container.classList.toggle('updater--visible');
 })
