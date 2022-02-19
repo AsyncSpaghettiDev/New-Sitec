@@ -8,6 +8,7 @@
     <title>Instituto Tecnológico de Tijuana – Acceso</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="acceso.css">
+    <script src="accesso.js" defer></script>
 </head>
 
 <body>
@@ -40,13 +41,13 @@
         </article>
         <form action="" class="form" id='form'>
             <div class="form__input form__keys">
-                <label for="noControl">Por favor escribe el Número de Control.</label>
+                <label class="label" for="noControl">Por favor escribe el Número de Control.</label>
                 <input id="noControl" placeholder="Número de Control" type="text">
             </div>
 
             <div class="form__input form__keys">
-                <label for="claveUser">Por favor escribe la clave.</label>
-                <input id="claveUser" placeholder="Clave" type="text">
+                <label class="label" for="claveUser">Por favor escribe la clave.</label>
+                <input id="claveUser" placeholder="Clave" type="password">
             </div>
 
             <div class="form__input">
@@ -69,7 +70,6 @@
             </div>
 
             <input class="submitBtn" type="submit" value="Entrar">
-            <a href="/panel.html">Entrar</a>
         </form>
         <article id='support'>
             <h3 class="subtitle important">

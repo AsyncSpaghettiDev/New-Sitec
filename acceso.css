@@ -58,8 +58,11 @@
     width: 90%;
 }
 
-.form__keys > label{
+.label{
     margin-bottom: 0.25em;
+    display: none;
+    color: #b92025;
+    font-weight: 500;
 }
 
 .form__keys > input{
@@ -73,6 +76,12 @@
     border-radius: 0.25em;
     box-shadow: 0 0 5px #555;
 }
+
+/* Wrong credentials*/
+.incorrect{
+    display: block;
+}
+
 
 @media screen and (min-width: 750px) {
     .main{
