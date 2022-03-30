@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em;
+    box-shadow: 0 5px 7px #aaa;
+    background-image: url(https://sitec.tijuana.tecnm.mx/wp-content/themes/fuente/base/images/K-NO.png);
+    background-repeat: repeat;
+    background-blend-mode: color;
+    background-color: rgba(255,255,255,0.5);
+}
+.title, .subtitle{
+    margin: 0 0 0.2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.subtitle, 
+.description{
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.subtitle{
+    font-size: 1.25rem;
+}
+
+.description{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+article{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+article:not(:first-child){
+    border-top: 5px solid #900;
+}
+.student-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.25em;
+    padding: 0.5em;
+    align-items: center;
+}
+
+.student-info .subtitle{
+    flex-basis: 100%;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    text-align: right;
+    column-gap: 0.25em;
+    flex: 1 1 max-content;
+    justify-content: center
+}
+
+.col img{
+    border-radius: 50%;
+}
+
+.p{
+    text-align: left;
+    margin: 0;
+}
+
+.student-courses .subtitle{
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.sem{
+    margin: 0.5em 0 1.5em;
+    flex-basis: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75em;
+    box-shadow: 0 0 10px #aaa;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.25);
+    gap: 0.5em;
+}
+
+.semestre-title{
+    flex-basis: 100%;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: .5em 0 0;
+}
+
+.course{
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 175px;
+    border-radius: 5px;
+    padding: 8px;
+    color: #000;
+    box-shadow: 0 0 1em #f0f0f0;
+}
+
+.course-key{
+    text-transform: uppercase;
+    background: #999;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.course-name{
+    text-transform: uppercase;
+}
+
+.course-detail{
+    display: none;
+}
+
+.course-detail > strong{
+    display: block;
+}
+
+.course-detail > strong::after{
+    margin-left: 0.25em;
+    font-weight: 400;
+    content: attr(value);
+}
+
+.course:hover{
+    border: 3px solid #000;
+}
+
+.course:hover > .course-resume {
+    display: none;
+}
+
+.course:hover .course-key{
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+}
+
+.course:hover > .course-detail {
+    display: block;
+}
+
+.aprobada{
+    background-color: #a3c159;
+}
+
+.pendiente{
+    background-color: #CCCCCC;
+}
+
+.sincursar{
+    background-color: #dee3ab;
+}
+
+.normal{
+    background-color: #fff;
+}
+
+@media screen and (min-width: 1070px) {
+    .title, .subtitle{
+        text-align: left;
+    }
+
+    .student-courses{
+        display: grid;
+        font-size: 0.75rem;
+        grid-template-columns: repeat(9, 115px);
+        grid-auto-rows: max-content;
+    }
+    .student-courses .subtitle{
+        grid-column: span 9;
+    }
+
+    .sem{
+        background: none;
+        box-shadow: none;
+        flex-direction: column;
+    }
+    .course:nth-child(2){
+        --autoHeight1 : 90px;
+        height: var(--autoHeight1) !important;
+        --autoHeight1 : max(max-content,--autoHeight1);
+    }
+    .course:nth-child(2):hover{
+        --autoHeight1 : max-content;
+    }
+    .semestre-title{
+        display: none;
+    }
+}

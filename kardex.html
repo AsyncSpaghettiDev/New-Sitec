@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnológico de Tijuana – Kardex</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="responsiveNav.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="kardex.css">
+    <script src="kardex.js" defer></script>
+    <script src="updater.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" id="logoTNM" src="./img/LogoTNM.png"
+            alt="Logo Tecnológico Nacional de México con Transparencia">
+        <img class="header__logo" id="logoTNMH" src="./img/LogoTecNM_Horizontal.svg"
+            alt="Logo Tecnológico Nacional de México">
+        <img class="header__logo" id="logoITT" src="./img/logo_ITT1.png"
+            alt="Logo Tecnológico Nacional de México Cámpus Instituto Tecnológico Tijuana">
+    </header>
+    <nav class="nav">
+        <label class="menuTriggerBtn" for="menuTrigger"><img src="/img/lista.png" alt=""></label>
+        <input hidden type="checkbox" name="" id="menuTrigger">
+        <ul class="navList">
+            <li class="nav__item"><a class="nav__a" href="panel.html">Mi Panel</a></li>
+            <li class="nav__item"><a class="nav__a" id="changePassword" href="#">Cambiar Clave</a></li>
+            <li class="nav__item"><a class="nav__a" id="changeEmail" href="#">Cambiar Email</a></li>
+            <li class="nav__item"><a class="nav__a" href="reinscripcion.html">Reinscripción</a></li>
+            <li class="nav__item"><a class="nav__a" href="avance-ciclo.html">Avance Ciclo</a></li>
+            <li class="nav__item"><a class="nav__a" href="kardex.html">Kardex</a></li>
+            <li class="nav__item"><a class="nav__a" href="log.html">Log</a></li>
+            <li class="nav__item"><a class="nav__a" href="/">Salir Sistema</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h1 class="title">Kardex</h1>
+            <h2 class="subtitle">Lorem ipsum dolor sit <span>(1621xxxx – ENE-JUN 22)</span></h2>
+            <p class="description">A continuación se muestran el acumulado de registros en KARDEX para el alumno. La
+                información aquí mostrada puede tener omisiones y para obtener una copia certificada del Kardex debes
+                acudir al Departamento de Escolares.</p>
+        </article>
+        <article class="student-info">
+            <h2 class="subtitle">INFORMACIÓN DEL ALUMNO</h2>
+            <span class="col">
+                <strong>CARRERA:</strong>
+                <p class="p">(00) Nam libero tempore</p>
+                <strong>PLAN:</strong>
+                <p class="p">(0) Et harum quidem rerum facilis est</p>
+                <strong>ESPECIALIDAD:</strong>
+                <p class="p">(alias consequatur aut perferendis)</p>
+                <strong>INGRESO:</strong>
+                <p class="p">(xxxx) Itaque earum rerum</p>
+                <strong>TERMINO:</strong>
+                <p class="p">(xxxx) Feugiat nec viverra</p>
+            </span>
+            <span class="col">
+                <strong>CREDITOS TOTALES:</strong>
+                <p class="p">xx</p>
+                <strong>CREDITOS ACUMULADOS:</strong>
+                <p class="p">xx</p>
+                <strong>CREDITOS CURSANDO:</strong>
+                <p class="p">xx</p>
+                <strong>MATERIAS TOTALES:</strong>
+                <p class="p">xx</p>
+                <strong>MATERIAS CURSADAS:</strong>
+                <p class="p">xx</p>
+            </span>
+            <span class="col">
+                <strong>% CREDITOS:</strong>
+                <p class="p">xx</p>
+                <strong>NUM PERIODOS CONVALIDADOS:</strong>
+                <p class="p">xx</p>
+                <strong>NUM PERIODOS:</strong>
+                <p class="p">xx</p>
+                <strong></strong>
+                <p class="p"></p>
+                <strong>ESTATUS:</strong>
+                <p class="p">1</p>
+            </span>
+            <span class="col">
+                <img src="./img/template.jpg" alt="" width="120">
+            </span>
+        </article>
+
+        <article class="student-courses">
+            <h2 class="subtitle">MATERIAS</h2>
+            <!-- Materias Primer Semestre -->
+            <div class="sem sem-1">
+                <h3 class="semestre-title">PRIMER SEMESTRE</h3>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">ACF-0901</strong>
+                        <p class="course-name">CALCULO DIFERENCIAL</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">ACF-0901</strong>
+                        <p class="course-name">CALCULO DIFERENCIAL</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="88">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="1">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">AED-1285</strong>
+                        <p class="course-name">FUNDAMENTOS DE PROGRAMACION</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">AED-1285</strong>
+                        <p class="course-name">FUNDAMENTOS DE PROGRAMACION</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="96">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="1">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">ACC-0906</strong>
+                        <p class="course-name">FUNDAMENTOS DE INVESTIGACION</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">ACC-0906</strong>
+                        <p class="course-name">FUNDAMENTOS DE INVESTIGACION</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="89">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="1">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="82">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="1">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="82">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="1">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="82">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="1">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Segundo Semestre -->
+            <div class="sem sem-2">
+                <h3 class="semestre-title">SEGUNDO SEMESTRE</h3>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">ACF-0904</strong>
+                        <p class="course-name">CALCULO INTEGRAL</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">ACF-0904</strong>
+                        <p class="course-name">CALCULO INTEGRAL</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="2">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="2">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="2">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course pendiente">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="2">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="2">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="2">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Tercer Semestre -->
+            <div class="sem sem-3">
+                <h3 class="semestre-title">TERCER SEMESTRE</h3>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">ACF-0904</strong>
+                        <p class="course-name">CALCULO VECTORIAL</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">ACF-0904</strong>
+                        <p class="course-name">CALCULO VECTORIAL</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Cuarto Semestre -->
+            <div class="sem sem-4">
+                <h3 class="semestre-title">CUARTO SEMESTRE</h3>
+                <span class="course pendiente">
+                    <span class="course-resume">
+                        <strong class="course-key">ACF-0905</strong>
+                        <p class="course-name">ECUACIONES DIFERENCIALES</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">ACF-0905</strong>
+                        <p class="course-name">ECUACIONES DIFERENCIALES</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Quinto Semestre -->
+            <div class="sem sem-5">
+                <h3 class="semestre-title">QUINTO SEMESTRE</h3>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Sexto Semestre -->
+            <div class="sem sem-6">
+                <h3 class="semestre-title">SEXTO SEMESTRE</h3>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Septimo Semestre -->
+            <div class="sem sem-7">
+                <h3 class="semestre-title">SEPTIMO SEMESTRE</h3>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course normal">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Octavo Semestre -->
+            <div class="sem sem-8">
+                <h3 class="semestre-title">OCTAVO SEMESTRE</h3>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">cursus at</strong>
+                        <p class="course-name">Magna luctus phasellus</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">Felis est</strong>
+                        <p class="course-name">bibendum tortor praesent</p>
+                        <strong value="5">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">enim mattis</strong>
+                        <p class="course-name">condimentum litora magna</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">lobortis quis</strong>
+                        <p class="course-name">Dis rhoncus neque faucibus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course sincursar">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+            <!-- Materias Noveno Semestre -->
+            <div class="sem sem-9">
+                <h3 class="semestre-title">NOVENO SEMESTRE</h3>
+                <span class="course">
+                </span>
+                <span class="course">
+                </span>
+                <span class="course">
+                </span>
+                <span class="course">
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">convall grav</strong>
+                        <p class="course-name">Maecenas ut nibh inceptos</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+                <span class="course aprobada">
+                    <span class="course-resume">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                    </span>
+                    <span class="course-detail">
+                        <strong class="course-key">praesent sed</strong>
+                        <p class="course-name">Placerat rhoncus</p>
+                        <strong value="4">Créditos:</strong>
+                        <strong value="xx">Calificación:</strong>
+                        <strong value="1">TC:</strong>
+                        <strong value="2193">Ciclo:</strong>
+                        <strong value="x">Sem.Cursada:</strong>
+                    </span>
+                </span>
+            </div>
+        </article>
+    </main>
+    <!--Template for add a new course-->
+    <template>
+        <span class="course normal">
+            <span class="course-resume">
+                <strong class="course-key"></strong>
+                <p class="course-name"></p>
+            </span>
+            <span class="course-detail">
+                <strong class="course-key"></strong>
+                <p class="course-name"></p>
+                <strong value=" ">Créditos:</strong>
+                <strong value=" ">Calificación:</strong>
+                <strong value=" ">TC:</strong>
+                <strong value=" ">Ciclo:</strong>
+                <strong value=" ">Sem.Cursada:</strong>
+            </span>
+        </span>
+    </template>
+    <div class="updater__container">
+        <div class="updater__wrapper">
+            <h2 class="updater-title">Template Title</h2>
+            <h3 class="updater-description">Template Description</h3>
+            <form class="updater-form" action="">
+                <div class="currentPassword">
+                    <label class="input-label" for="currentPasswordInput"></label>
+                    <input class="updater-input" id="currentPasswordInput" placeholder="Clave Actual" type="text">
+                </div>
+                <div class="newField">
+                    <label class="input-label" for="newFieldInput"></label>
+                    <input class="updater-input" id="newFieldInput" type="text">
+                </div>
+                <div class="confirmField">
+                    <label class="input-label" for="confirmFieldInput"></label>
+                    <input class="updater-input" id="confirmFieldInput" type="text">
+                </div>
+                <iframe title="reCAPTCHA" style="display: block;margin: 0.75em auto 0; width: min(310px, 90%);"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcHacMZAAAAAG5ucqmbMbftteQlLGFmaJnut_KD&amp;co=aHR0cHM6Ly9zaXRlYy50aWp1YW5hLnRlY25tLm14OjQ0Mw..&amp;hl=es&amp;v=BycHQdSIhzR_1EcOLw2mOzYQ&amp;size=normal&amp;cb=7p4tr7mxyeqq"
+                    height="78" role="presentation" name="a-wmpp8fge8a6r" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                <input class="updater-submit" type="submit" value="Actualizar">
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Instituto Tecnológico de Tijuana<br>
+            Calzada Del Tecnológico S/N, Fraccionamiento Tomas Aquino. Tijuana, Baja California. C.P. 22414
+            Teléfono: +52 (664) 607 8400<br>
+            Tecnológico Nacional de México – Algunos derechos reservados © 2014-2018<br>
+            <a href="/politica-de-privacidad/">Política de Privacidad</a>
+        </p>
+        <p>new SITEC v2.0</p>
+    </footer>
+</body>
+
+</html>
